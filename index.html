@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Poultry Farm Order Form</title>
 </head>
 <body>
@@ -45,13 +43,12 @@
       <fieldset>
         <legend>Order Details</legend>
         
-        <label for="product">Product:</label>
-        <select id="product" name="product" required>
+        <label for="product">Type of poultry:</label>
+        <select id="poultry of choice" name="poulrty of choice" required>
           <option value="" disabled selected>-- Select a Product --</option>
-          <option value="eggs">Eggs</option>
+          <option value="kienyeji">Eggs</option>
           <option value="broilers">Broilers</option>
           <option value="layers">Layers</option>
-          <option value="chicks">Chicks</option>
         </select>
 
         <label for="quantity">Quantity:</label>
@@ -63,18 +60,7 @@
           min="1" 
           required
         >
-        
-        <label for="message">Additional Information:</label>
-        <textarea 
-          id="message" 
-          name="message" 
-          placeholder="Enter any special requirements" 
-          rows="4"
-        ></textarea>
-      </fieldset>
-      
-      
-      <button type="submit">Submit Order</button>
+            <button type="submit">Submit Order</button>
     </form>
   </div>
 </body>
